@@ -11,9 +11,9 @@ function table(card, row, column) {
     }
   
 const card = [ 
-     "<img src='/imgs/cat.jpeg'></img>",
-     "<img src='/imgs/cat.jpeg'></img>",
-     "<img src='/imgs/cat.jpeg'></img>"
+     "<img src='/imgs/cat.jpeg' id='img'></img>",
+     "<img src='/imgs/cat.jpeg' id='img'></img>",
+     "<img src='/imgs/cat.jpeg' id='img'></img>"
 ]
 let gameTable1 = table(card, 3, 4); ; 
 gameTable1 = gameTable1 + "</table>";
