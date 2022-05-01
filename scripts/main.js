@@ -1,5 +1,5 @@
 function table(card, row, column) {
-    let gameTable = "<table>";
+    let gameTable = "<table class='table'>";
     for (let i = 0; i < row; i++) {
         gameTable = gameTable + "<tr>";
         for (let j = 0; j < column; j++) {
