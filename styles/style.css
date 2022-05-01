@@ -9,10 +9,6 @@ body {
 }
 
 .sidebar {
-    background-color:black;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    height: 100%;
+  
     
 }
