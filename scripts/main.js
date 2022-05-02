@@ -13,7 +13,7 @@ function table(card, row, column) {
 const card = [ 
      "<img src='/imgs/img_1.png' id='img'></img>"
 ]
-let gameTable1 = table(card, 3, 4); ; 
+let gameTable1 = table(card, 4, 6); ; 
 gameTable1 = gameTable1 + "</table>";
 console.log(gameTable1);
 document.getElementById("game_view").innerHTML = gameTable1;
