@@ -10,9 +10,9 @@ function table(card, row, column) {
       return gameTable;
     }
   
-const card = [ 
-     "<img src='/imgs/img_1.png' id='img'></img>"
-]
+// const card = [ 
+//      "<img src='/imgs/img_1.png' id='img'></img>"
+// ]
 gameTable1 = gameTable1 + "</table>";
 console.log(gameTable1);
 document.getElementById("game_view").innerHTML = gameTable1;
