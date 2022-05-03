@@ -9,6 +9,9 @@ body {
     border-radius: 20px;
     border: 8px solid;
     box-shadow: 10px 10px #eb7272;
+    transform: rotateY(180deg);
+    /* backface-visibility: hidden; */
+    transition: all 0.5s linear;
 }
 .table {
     margin-left: auto;
