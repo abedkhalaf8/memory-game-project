@@ -1,3 +1,4 @@
+
  body{
   background: url(/imgs/background4.png) no-repeat center center/cover;
   background-size: 240vh;
@@ -97,4 +98,19 @@ h3 {
   font-family: monospace;
   font-size: 24px;
   background-color: #ffdc13;
+}
+
+.sidebar {
+  background-color: #e58f8f;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#gap {
+  /* margin: 60px; */
+  /* position: relative;
+  left: 200px; */
+  
 }

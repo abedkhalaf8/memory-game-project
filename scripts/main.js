@@ -27,6 +27,7 @@ document.getElementById("flashcard").innerHTML = gameTable1;
 
 const imgs = document.querySelectorAll(".table img");
 
+
 const assignIds = () => {
     const pairs = imgs.length / 2;
     let id = Math.floor(Math.random() * pairs) + 1;
