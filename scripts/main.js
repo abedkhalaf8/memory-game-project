@@ -25,4 +25,39 @@ document.getElementById("flashcard").innerHTML = gameTable1;
 
 
 
+const imgs = document.querySelectorAll(".table img");
 
+const assignIds = () => {
+    const pairs = imgs.length / 2;
+    let id = Math.floor(Math.random() * pairs) + 1;
+    const ids = {};
+    for(let i = 0; i < imgs.length; i++) {
+        id = Math.floor(Math.random() * pairs) + 1;
+        while(ids[id] === 2) id = Math.floor(Math.random() * pairs) + 1;
+        if(ids[id] === undefined) ids[id] = 1;
+        else ids[id]++;
+        imgs[i].setAttribute("card-id", id);
+     
+    }
+}
+assignIds();
+
+const backSide = {
+    1: "../imgs/img_1.png",
+    2: "../imgs/img_2.png",
+    3: "../imgs/img_3.png",
+    4: "../imgs/img_4.png",
+    5: "../imgs/img_5.png",
+    6: "../imgs/img_6.png"
+}
+
+const addClickEvent = (e) => {
+    const card = e.target;
+    console.log(card);
+    const cardId = card.getAttribute("card-id");
+    card.setAttribute("src", backSide[cardId]);
+
+}
+
+const table1 = document.querySelector(".table");
+table1.addEventListener("click", addClickEvent);
