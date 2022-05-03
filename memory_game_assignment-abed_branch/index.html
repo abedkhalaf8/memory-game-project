@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Memory Game Assignment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+      <audio src="/sounds/background_music.mp3" autoplay loop></audio>
+
+        <div class="project-title">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h3 class="animate-charcter">Memory Game Assignment</h3>
+              </div>
+            </div>
+          </div>
+     <main>
+         <div class="game_view" >
+         <div id="flashcard"> 
+             <div class="flash-card-flipped"></div>
+          </div>
+        </div>
+         <div class="sidebar">
+           <div class="timer">
+          <label id="minutes">00</label>:<label id="seconds">00</label>
+          </div>
+          <div class="counter" id="gap">counter</div>
+      
+             <button type="button" class="new_game_button"  id="gap">NEW GAME</button>
+         </div>
+     </main>
+        <script src="./scripts/main.js" ></script>
+    </body>
+</html>
