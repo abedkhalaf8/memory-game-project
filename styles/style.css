@@ -15,6 +15,8 @@
     top : 10px;
     margin: -8px;
     margin-left: -8px;
+    transform: rotateY(180deg);
+    transition: all 0.5s linear;
 
 }
 
@@ -41,6 +43,7 @@
 }
 #img:hover {
     color: rgb(245, 226, 117);
+    cursor: pointer;
 }
 .animate-charcter {
    text-transform: uppercase;
