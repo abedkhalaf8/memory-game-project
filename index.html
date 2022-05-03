@@ -12,8 +12,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap" rel="stylesheet"> 
     </head>
     <body>
-      <audio src="/sounds/background_music.mp3" autoplay loop></audio>
-
         <div class="project-title">
             <div class="row">
               <div class="col-md-12 text-center">
@@ -22,18 +20,15 @@
             </div>
           </div>
      <main>
-         <div class="game_view" >
+         <div class="game_view">
          <div id="flashcard"> 
              <div class="flash-card-flipped"></div>
           </div>
         </div>
          <div class="sidebar">
-           <div class="timer">
-          <label id="minutes">00</label>:<label id="seconds">00</label>
-          </div>
-          <div class="counter" id="gap">counter</div>
-      
-             <button type="button" class="new_game_button"  id="gap">NEW GAME</button>
+             <div class="timer" id="gap">timer</div>
+             <div class="counter" id="gap">counter</div>
+             <button type="button" class="new_game_button"  id="gap">new game</button>
          </div>
      </main>
         <script src="./scripts/main.js" ></script>
