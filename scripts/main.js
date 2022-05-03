@@ -2,6 +2,7 @@
 const arryOfCards = [ 
     "<img src='/imgs/question_mark.jpeg' id='img'></img>"
 ]
+
 function table(card, row, column) {
     let gameTable = "<table class='table'>";
     for (let i = 0; i < row; i++) {
