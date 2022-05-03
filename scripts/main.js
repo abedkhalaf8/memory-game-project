@@ -61,3 +61,28 @@ const addClickEvent = (e) => {
 
 const table1 = document.querySelector(".table");
 table1.addEventListener("click", addClickEvent);
+
+
+
+// Timer added by Abed 
+//1- connect it to the first click.
+//2- and to the last click at the end of the game.
+let minutesLabel = document.getElementById("minutes");
+let secondsLabel = document.getElementById("seconds");
+let totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+}
+
+function pad(val) {
+  let valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
