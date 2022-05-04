@@ -1,7 +1,7 @@
 import { setTime } from "./timer.js";
 import { gameBoard } from "./main.js";
 
-export let guessCount = 1;
+export let wrongGuessCount = 1;
 export let countMatches = 0;
 export let firstClick = true;
 export let cooldown = false;
@@ -33,8 +33,6 @@ export const cardHandler = () => {
     return img.getAttribute("flipped") === "checkForMatch";
   });
   if (flippedCards.length === 2) {
-    // Counting the number of guesses
-    counter.innerHTML = guessCount++;
     // when cooldown is true you can't click
     cooldown = true;
     // time out function to make cards unclickable if 2 cards are flipped
@@ -50,6 +48,8 @@ export const cardHandler = () => {
           gameBoard.removeEventListener("click", addClickEvent);
         }
       } else {
+        // Counting the number of guesses
+        counter.innerHTML = wrongGuessCount++;
         // if they don't match remove flipped attribute and change the displayed img to the backside image
         removeAttr(flippedCards, "flipped");
         changeAttribute(flippedCards, "src", backSide);
