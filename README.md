@@ -8,4 +8,3 @@ Itamar and Shira worked on the functions of the js file.
 
 
 
-![Alt text](/imgs/imgforthegame raw=true "img for the game")
