@@ -1,1 +1,3 @@
-# memory_game_assignment
+# Memory Game Assigment - Weekend Project
+# AppleSeeds Bootcamp
+
