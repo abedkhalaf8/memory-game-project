@@ -8,3 +8,4 @@ Itamar and Shira worked on the functions of the js file.
 
 
 
+![image!](./imgs/imgforthegame.png)
