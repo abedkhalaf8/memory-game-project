@@ -6,8 +6,8 @@ In this project, we used HTML, CSS, and js.\
 Abed worked on the design of the page HTML & CSS.\
 Itamar and Shira worked on the functions of the js file.
 
-# Link to the game project 
-[link](http://www.memory-game-assignment.netlify.app)
+
+# [Link to the game project](https://www.memory-game-assignment.netlify.app)
 
 
 ![image!](./imgs/imgforthegame.png)
