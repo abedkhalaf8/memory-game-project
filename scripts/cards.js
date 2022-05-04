@@ -1,4 +1,5 @@
 import { setTime } from "./timer.js";
+import { gameBoard } from "./main.js";
 
 export let guessCount = 1;
 export let countMatches = 0;
@@ -46,6 +47,7 @@ export const cardHandler = () => {
         if (countMatches === 6) {
           clearInterval(time);
           title.innerHTML = "You Won!";
+          gameBoard.removeEventListener("click", addClickEvent);
         }
       } else {
         // if they don't match remove flipped attribute and change the displayed img to the backside image

@@ -7,6 +7,6 @@ document.getElementById("flashcard").innerHTML = gameTable;
 
 assignIds();
 
-const gameBoard = document.querySelector(".table");
+export const gameBoard = document.querySelector(".table");
 gameBoard.addEventListener("click", addClickEvent);
 
