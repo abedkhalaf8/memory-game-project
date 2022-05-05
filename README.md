@@ -8,5 +8,5 @@ In this project, we used HTML, CSS, and js.\
 
 [Link to the game project](https://www.memory-game-assignment.netlify.app/)
 
-<img src="./imgs/imgforthegame.png" width="128"/>
+<img src="./imgs/imgforthegame.png" width="408"/>
 
