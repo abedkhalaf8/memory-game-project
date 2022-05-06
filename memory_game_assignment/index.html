@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Memory Game Assignment</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="./videos/background.mp4" type="video/mp4">
+    </video>
+    <div class="project-title">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="animate-charcter">Memory Game Assignment</h3>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="game_view">
+        <div id="flashcard">
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="timer">
+          <label id="minutes">00</label>:<label id="seconds">00</label>
+        </div>
+        <div class="counter" id="gap">
+          Wrong Guesses <span class="counter-value">0</span>
+        </div>
+
+        <a href="./">
+          <button type="button" class="new_game_button" id="gap">
+            NEW GAME
+          </button></a>
+      </div>
+    </main>
+    <!-- new background video and music -->
+    <audio autoplay id="myAudio">
+      <source src="./sounds/background.mp3" type="audio/wav" />
+    </audio>
+   
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>
