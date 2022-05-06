@@ -25,7 +25,7 @@ export const cardHandler = () => {
   const counter = document.querySelector(".counter-value");
   const title = document.querySelector(".animate-charcter");
   // back side image
-  const backSide = "../imgs/question_mark-flipped.jpg";
+  const backSide = "../images/question_mark-flipped.jpg";
   // getting all img elements inside the table and storing them as an array
   const imgs = [...document.querySelectorAll(".table img")];
   // getting only the imgs that have attribute of flipped and is check for match
@@ -92,12 +92,12 @@ export const addClickEvent = (e) => {
 
   if (cooldown) return;
   const frontSide = {
-    1: "../imgs/img_1.png",
-    2: "../imgs/img_2.png",
-    3: "../imgs/img_3.png",
-    4: "../imgs/img_4.png",
-    5: "../imgs/img_5.png",
-    6: "../imgs/img_6.png",
+    1: "../images/img_1.png",
+    2: "../images/img_2.png",
+    3: "../images/img_3.png",
+    4: "../images/img_4.png",
+    5: "../images/img_5.png",
+    6: "../images/img_6.png",
   };
   const card = e.target;
   // cardId saves the id that was given to the img randomly
