@@ -15,8 +15,9 @@
     />
   </head>
   <body>
-   
-
+    <video autoplay muted loop id="myVideo">
+      <source src="./videos/background.mp4" type="video/mp4">
+    </video>
     <div class="project-title">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -40,10 +41,14 @@
         <a href="./">
           <button type="button" class="new_game_button" id="gap">
             NEW GAME
-          </button></a
-        >
+          </button></a>
       </div>
     </main>
+    <!-- new background video and music -->
+    <audio autoplay id="myAudio">
+      <source src="./sounds/background.mp3" type="audio/wav" />
+    </audio>
+   
     <script src="./scripts/main.js" type="module"></script>
   </body>
 </html>
