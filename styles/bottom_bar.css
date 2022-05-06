@@ -1,0 +1,32 @@
+.bottom_bar {
+    background: url(../images/wallpaper_sidebar.jpg);
+    height: 80px;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px; 
+    font-family: monospace;  
+    position: fixed;
+    z-index: 100; 
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    font-family: 'Bangers', cursive;
+    font-family: 'Press Start 2P', cursive; 
+  }
+  .bottom_bar button{
+    border-color: rgb(65, 90, 90);
+    color: black;
+    font-family: monospace;
+    font-size: 24px;
+    background-color: #ffdc13;
+    font-family: 'Bangers', cursive;
+      font-family: 'Press Start 2P', cursive; 
+  }
+  .bottom_bar {
+    background-color: #e58f8f;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }

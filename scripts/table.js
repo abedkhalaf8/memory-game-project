@@ -1,6 +1,6 @@
 // an array of cards that will be in the game board
 export const arryOfCards = [
-  "<img src='../imgs/question_mark-flipped.jpg' id='img'></img>",
+  "<img src='../images/question_mark-flipped.jpg' id='img'></img>",
 ];
 
 export function table(card, row, column) {
