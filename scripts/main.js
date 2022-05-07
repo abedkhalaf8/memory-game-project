@@ -33,7 +33,7 @@ btn2.addEventListener('click', function (){
    audio2.play();
 })
 btn3.addEventListener('click', function (){
-  createGameBoard(4, 6);
+  createGameBoard(3, 8);
   resetFirstClick();
   resetTime();
   resetWrongGuessCount();

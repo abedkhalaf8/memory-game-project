@@ -37,19 +37,14 @@
              </div>
              <!-- the game board -->
              <div class="game_view">
-        
                <!-- Name input -->
                <div class="name_input">
                 <div class="container">
                   <label for="name">Name</label>
                   <input type="text" name="name" id="name">
                   <input type="submit" value="Submit" id="submit">
-                </div>
-              </div>
-              <!-- the flashcards -->
-                   <div id="flashcard"></div>
-                     <!-- Leader Board -->
-                     <div class="leader_board">
+                    <!-- Leader Board -->
+                    <div class="leader_board">
                       <h2><span style="color:rgb(251, 255, 0)">Leader</span> Board</h2>
                        <table class="leader_board_table">
                          <tr>
@@ -59,8 +54,11 @@
                          </tr>
                        </table>
                     </div>
+                </div>
+              </div>
+              <!-- the flashcards -->
+                   <div id="flashcard"></div>
              </div>
-             
              <!-- the bottom bar -->
              <div class="bottom_bar">
                 <!-- game theme -->
@@ -72,10 +70,8 @@
                   <!-- a timer to count how much takes to win the game. -->
                   <div class="game_counters">
                   <div class="timer">
-                      <label id="minutes">00</label>:<label id="seconds">00</label>
+                      <label id="minutes">00:</label><label id="seconds">00</label>
                   </div>
-                  
-                  
                   <!-- a counter for the wrong guesses. -->
                   <div class="counter">Wrong Guesses:<span class="counter-value"> 0 </span></div>
                 </div>
@@ -86,7 +82,6 @@
                 </div>
                 <!-- new game button -->
                 <a href="./"><button type="button" id="new_game_button">NEW GAME</button></a>
-        
              </div>
        </main>
     <script src="./scripts/main.js" type="module"></script>
