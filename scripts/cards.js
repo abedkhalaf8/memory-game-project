@@ -22,6 +22,8 @@ export const assignIds = () => {
 };
 
 export const cardHandler = (currentGameBoard) => {
+  const audio1 = new Audio('../sounds/win_game.mp3');
+  audio1.volume = 1;
   const counter = document.querySelector(".counter-value");
   const title = document.querySelector(".animate-charcter");
   // back side image
@@ -49,6 +51,7 @@ export const cardHandler = (currentGameBoard) => {
           currentGameBoard.removeEventListener("click", addClickEvent);
           countMatches = 0;
           takeName()
+          audio1.play();
         }
       } else {
         // Counting the number of guesses
@@ -65,13 +68,18 @@ export const cardHandler = (currentGameBoard) => {
     }, 1000);
   }
 };
-
+const audio5 = new Audio('../sounds/no_match.mp3');
+audio5.volume = 1;
+const audio4 = new Audio('../sounds/card_match.mp3');
+audio4.volume = 1;
 export const isMatch = (cards) => {
   for (let i = 1; i < cards.length; i++) {
     if (cards[0].getAttribute("card-id") !== cards[i].getAttribute("card-id")) {
+      audio5.play();
       return false;
     }
   }
+  audio4.play();
   return true;
 }
 
