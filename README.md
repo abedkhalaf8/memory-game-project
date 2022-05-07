@@ -16,5 +16,5 @@ In this project, we used HTML, CSS, and js.\
 
 [Link to our game project](https://memorygproject.netlify.app/)
 
-<img src="./images/projectimg.png" width="308"/>
+<img src="./assets/images/projectimg.png" width="308"/>
 
