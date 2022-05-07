@@ -2,7 +2,7 @@ import { assignIds, addClickEvent } from "./cards.js";
 
 // an array of cards that will be in the game board
 export const arryOfCards = [
-  "<img src='../images/question_mark-flipped.jpg' id='img'></img>",
+  "<img src='./assets/images/question_mark-flipped.jpg' id='img'></img>",
 ];
 
 export function table(card, row, column) {

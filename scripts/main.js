@@ -9,7 +9,7 @@ export let level = "easy";
 let btn1 = document.getElementById("btn-easy");
 let btn2 = document.getElementById("btn-medium");
 let btn3 = document.getElementById("btn-hard");
-const audio2 = new Audio('../sounds/level_up.mp3')
+const audio2 = new Audio('./assets/sounds/level_up.mp3')
 audio2.volume = 1;
 // set for the background music
 let backgroundAudio = document.getElementById("myAudio");
