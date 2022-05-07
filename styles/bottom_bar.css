@@ -86,3 +86,29 @@ margin: -10px;
 .themes button:hover {
 color: aqua;
 }
+
+
+#btn-easy{
+  background-color: #fadead;
+  border-radius: 5px;
+  font-family: 'Bangers', cursive;
+  font-family: 'Press Start 2P', cursive; 
+  width: 70px ;
+  border-color: #f4c8ea;
+}
+#btn-medium{
+  background-color: #f3bf65;
+  border-radius: 5px;
+  font-family: 'Bangers', cursive;
+  font-family: 'Press Start 2P', cursive; 
+  width: 100px ;
+  border-color: #f4c8ea;
+}
+#btn-hard{
+  background-color: #f99f05;
+  border-radius: 5px;
+  font-family: 'Bangers', cursive;
+  font-family: 'Press Start 2P', cursive; 
+  width: 78px ;
+  border-color: #f4c8ea;
+}

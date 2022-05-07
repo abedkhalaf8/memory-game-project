@@ -98,6 +98,12 @@ export const addClickEvent = (e) => {
     4: "../images/img_4.png",
     5: "../images/img_5.png",
     6: "../images/img_6.png",
+    7: "../images/img_7.png",
+    8: "../images/img_8.png",
+    9: "../images/img_9.png",
+    10: "../images/img_10.png",
+    11: "../images/img_11.png",
+    12: "../images/img_12.png",
   };
   const card = e.target;
   // cardId saves the id that was given to the img randomly
