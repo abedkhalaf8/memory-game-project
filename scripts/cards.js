@@ -45,7 +45,7 @@ export const cardHandler = (currentGameBoard) => {
         // if they match change flipped atrribute from checkForMatch to matchFound
         changeAttribute(flippedCards, "flipped", "matchFound");
         countMatches++;
-        if (countMatches === 6) {
+        if (countMatches === pairs) {
           clearInterval(time);
           title.innerHTML = "You Won!";
           currentGameBoard.removeEventListener("click", addClickEvent);
