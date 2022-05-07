@@ -22,12 +22,12 @@ export const assignIds = () => {
 };
 
 export const cardHandler = (currentGameBoard) => {
-  const audio1 = new Audio('../sounds/win_game.mp3');
+  const audio1 = new Audio('./assets/sounds/win_game.mp3');
   audio1.volume = 1;
   const counter = document.querySelector(".counter-value");
   const title = document.querySelector(".animate-charcter");
   // back side image
-  const backSide = "../images/question_mark-flipped.jpg";
+  const backSide = "./assets/images/question_mark-flipped.jpg";
   // getting all img elements inside the table and storing them as an array
   const imgs = [...document.querySelectorAll(".table img")];
   const pairs = imgs.length / 2;
@@ -68,9 +68,9 @@ export const cardHandler = (currentGameBoard) => {
     }, 1000);
   }
 };
-const audio5 = new Audio('../sounds/no_match.mp3');
+const audio5 = new Audio('./assets/sounds/no_match.mp3');
 audio5.volume = 1;
-const audio4 = new Audio('../sounds/card_match.mp3');
+const audio4 = new Audio('./assets/sounds/card_match.mp3');
 audio4.volume = 1;
 export const isMatch = (cards) => {
   for (let i = 1; i < cards.length; i++) {
@@ -105,18 +105,18 @@ export const addClickEvent = (e) => {
   if (cooldown) return;
 
   const frontSide = {
-    1: "../images/img_1.png",
-    2: "../images/img_2.png",
-    3: "../images/img_3.png",
-    4: "../images/img_4.png",
-    5: "../images/img_5.png",
-    6: "../images/img_6.png",
-    7: "../images/img_7.png",
-    8: "../images/img_8.png",
-    9: "../images/img_9.png",
-    10: "../images/img_10.png",
-    11: "../images/img_11.png",
-    12: "../images/img_12.png",
+    1: "./assets/images/img_1.png",
+    2: "./assets/images/img_2.png",
+    3: "./assets/images/img_3.png",
+    4: "./assets/images/img_4.png",
+    5: "./assets/images/img_5.png",
+    6: "./assets/images/img_6.png",
+    7: "./assets/images/img_7.png",
+    8: "./assets/images/img_8.png",
+    9: "./assets/images/img_9.png",
+    10: "./assets/images/img_10.png",
+    11: "./assets/images/img_11.png",
+    12: "./assets/images/img_12.png",
   };
   const card = e.target;
   // cardId saves the id that was given to the img randomly

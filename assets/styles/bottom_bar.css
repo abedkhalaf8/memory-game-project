@@ -1,5 +1,5 @@
 .bottom_bar {
-    background: url(../images/wallpaper_sidebar.jpg);
+    background: url(/assets/images/wallpaper_sidebar.jpg);
     height: 80px;
     display: flex;
     align-items: center;
@@ -110,7 +110,7 @@ color: aqua;
 }
 @media (max-width: 945px) {
   .bottom_bar {
-    background: url(../images/wallpaper_sidebar.jpg);
+    background: url(/assets/images/wallpaper_sidebar.jpg);
     height: 80px;
     display: flex;
     align-items: center;
@@ -229,7 +229,7 @@ color: aqua;
 }
 @media (max-width: 550px) {
   .bottom_bar {
-    background: url(../images/wallpaper_sidebar.jpg);
+    background: url(/assets/images/wallpaper_sidebar.jpg);
     height: 80px;
     display: flex;
     align-items: center;
