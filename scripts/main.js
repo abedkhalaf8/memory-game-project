@@ -43,14 +43,6 @@ btn3.addEventListener('click', function (){
   audio2.play();
 })
 
-// // sound for the new game btn
-// let newGameBtn = document.getElementById("new_game_button");
-// const audio3 = new Audio('../sounds/new_game.mp3')
-// newGameBtn.addEventListener('click', function () {
-//   audio3.play();
-// })
-
-
 // set for the background music
 let backgroundAudio = document.getElementById("myAudio");
 backgroundAudio.volume = 2;
