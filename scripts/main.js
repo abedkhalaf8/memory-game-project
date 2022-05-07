@@ -1,48 +1,44 @@
-import { assignIds, addClickEvent } from "./cards.js";
-import { table, arryOfCards } from "./table.js";
+import { resetFirstClick, resetWrongGuessCount, resetTitle } from "./cards.js";
+import { createGameBoard } from "./table.js";
+import { resetTime } from "./timer.js";
 
-let gameTable = table(arryOfCards, 3, 4);
-gameTable = gameTable + "</table>";
-document.getElementById("flashcard").innerHTML = gameTable;
-assignIds();
-export const gameBoard = document.querySelector(".table");
-gameBoard.addEventListener("click", addClickEvent);
-
+createGameBoard(3, 4);
 
 // game levels
+export let level = "easy";
 let btn1 = document.getElementById("btn-easy");
 let btn2 = document.getElementById("btn-medium");
 let btn3 = document.getElementById("btn-hard");
 const audio2 = new Audio('../sounds/level_up.mp3')
 audio2.volume = 1;
+// set for the background music
+let backgroundAudio = document.getElementById("myAudio");
+backgroundAudio.volume = 1;
 btn1.addEventListener('click', function (){
-    gameTable = table(arryOfCards, 3, 4);
-    gameTable = gameTable + "</table>";
-    document.getElementById("flashcard").innerHTML = gameTable;
-    assignIds();
-    const gameBoard = document.querySelector(".table");
-    gameBoard.addEventListener("click", addClickEvent);
+    createGameBoard(3, 4);
+    resetFirstClick();
+    resetTime();
+    resetWrongGuessCount();
+    resetTitle();
+    level = "easy"
     audio2.play();
 })
 btn2.addEventListener('click', function (){
-   gameTable = table(arryOfCards, 3, 6);
-   gameTable = gameTable + "</table>";
-   document.getElementById("flashcard").innerHTML = gameTable;
-   assignIds();
-   const gameBoard = document.querySelector(".table");
-   gameBoard.addEventListener("click", addClickEvent);
+  createGameBoard(3, 6);
+   resetFirstClick();
+   resetTime();
+   resetWrongGuessCount();
+   resetTitle();
+   level = "medium"
    audio2.play();
 })
 btn3.addEventListener('click', function (){
-  gameTable = table(arryOfCards, 4, 6);
-  gameTable = gameTable + "</table>";
-  document.getElementById("flashcard").innerHTML = gameTable;
-  assignIds();
-  const gameBoard = document.querySelector(".table");
-  gameBoard.addEventListener("click", addClickEvent);
+  createGameBoard(4, 6);
+  resetFirstClick();
+  resetTime();
+  resetWrongGuessCount();
+  resetTitle();
+  level = "hard"
   audio2.play();
 })
 
-// set for the background music
-let backgroundAudio = document.getElementById("myAudio");
-backgroundAudio.volume = 2;
