@@ -1,8 +1,3 @@
-/* body {
-    background: url(/images/background4.png) no-repeat center center/cover;
-    background-size: 240vh;
-    position: static;
-} */
 .animate-charcter {
   text-transform: uppercase;
    background-image: linear-gradient(
@@ -37,3 +32,12 @@
      top: 20px;
      position: relative;
  }
+ @media (max-width: 1090px) {
+  h3 {
+    font-size:11px;
+    font-family: 'Bangers', cursive;
+    font-family: 'Press Start 2P', cursive; 
+    top: 6px;
+    position: relative;
+}
+}
