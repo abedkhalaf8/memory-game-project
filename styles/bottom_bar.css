@@ -14,7 +14,7 @@
     font-family: 'Bangers', cursive;
     font-family: 'Press Start 2P', cursive; 
   }
-  .new_game_button{
+  #new_game_button{
     border-color: rgb(0, 0, 0);
     color: rgba(0, 0, 0, 0.825);
     font-family: monospace;

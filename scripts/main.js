@@ -13,6 +13,8 @@ gameBoard.addEventListener("click", addClickEvent);
 let btn1 = document.getElementById("btn-easy");
 let btn2 = document.getElementById("btn-medium");
 let btn3 = document.getElementById("btn-hard");
+const audio2 = new Audio('../sounds/level_up.mp3')
+audio2.volume = 1;
 btn1.addEventListener('click', function (){
     gameTable = table(arryOfCards, 3, 4);
     gameTable = gameTable + "</table>";
@@ -20,6 +22,7 @@ btn1.addEventListener('click', function (){
     assignIds();
     const gameBoard = document.querySelector(".table");
     gameBoard.addEventListener("click", addClickEvent);
+    audio2.play();
 })
 btn2.addEventListener('click', function (){
    gameTable = table(arryOfCards, 3, 6);
@@ -28,6 +31,7 @@ btn2.addEventListener('click', function (){
    assignIds();
    const gameBoard = document.querySelector(".table");
    gameBoard.addEventListener("click", addClickEvent);
+   audio2.play();
 })
 btn3.addEventListener('click', function (){
   gameTable = table(arryOfCards, 4, 6);
@@ -36,5 +40,17 @@ btn3.addEventListener('click', function (){
   assignIds();
   const gameBoard = document.querySelector(".table");
   gameBoard.addEventListener("click", addClickEvent);
-
+  audio2.play();
 })
+
+// // sound for the new game btn
+// let newGameBtn = document.getElementById("new_game_button");
+// const audio3 = new Audio('../sounds/new_game.mp3')
+// newGameBtn.addEventListener('click', function () {
+//   audio3.play();
+// })
+
+
+// set for the background music
+let backgroundAudio = document.getElementById("myAudio");
+backgroundAudio.volume = 2;
