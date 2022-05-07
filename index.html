@@ -37,17 +37,7 @@
              </div>
              <!-- the game board -->
              <div class="game_view">
-               <!-- Leader Board -->
-               <div class="leader_board">
-                 <h2>Leader Board</h3>
-                  <table class="leader_board_table">
-                    <tr>
-                      <th>Name</th>
-                      <th>Wrong Guesses</th>
-                      <th>Difficulty</th>
-                    </tr>
-                  </table>
-               </div>
+        
                <!-- Name input -->
                <div class="name_input">
                 <div class="container">
@@ -58,7 +48,19 @@
               </div>
               <!-- the flashcards -->
                    <div id="flashcard"></div>
+                     <!-- Leader Board -->
+                     <div class="leader_board">
+                      <h2><span style="color:rgb(251, 255, 0)">Leader</span> Board</h2>
+                       <table class="leader_board_table">
+                         <tr>
+                           <th style="color:white"><span style="color:rgb(251, 255, 0)">$</span>Name<span style="color:rgb(204, 0, 255)">$</span></th>
+                           <th style="color:rgb(251, 50, 50)"><span style="color:rgb(255, 251, 0)">$</span>Wrong Guesses<span style="color:red">$</span></th>
+                           <th style="color:rgb(106, 255, 7)"><span style="color:rgb(0, 191, 255)">$</span>Difficulty<span style="color:rgb(255, 153, 0)">$</span></th>
+                         </tr>
+                       </table>
+                    </div>
              </div>
+             
              <!-- the bottom bar -->
              <div class="bottom_bar">
                 <!-- game theme -->
@@ -72,6 +74,8 @@
                   <div class="timer">
                       <label id="minutes">00</label>:<label id="seconds">00</label>
                   </div>
+                  
+                  
                   <!-- a counter for the wrong guesses. -->
                   <div class="counter">Wrong Guesses:<span class="counter-value"> 0 </span></div>
                 </div>
@@ -82,11 +86,10 @@
                 </div>
                 <!-- new game button -->
                 <a href="./"><button type="button" id="new_game_button">NEW GAME</button></a>
-          
+        
              </div>
        </main>
     <script src="./scripts/main.js" type="module"></script>
     <script src="./scripts/theme.js"></script>
->>>>>>> da92af17aca1d6591acf7997ea483eae5c9af239
   </body>
 </html>

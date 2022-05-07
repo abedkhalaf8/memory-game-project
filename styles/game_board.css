@@ -59,3 +59,30 @@
     flex-direction: column;
     gap: 2rem;
 }
+
+
+ .leader_board {
+       font-family: 'Courier New', Courier, monospace;
+       text-align: center;
+       font-size: 13px;
+       font-family: monospace;
+       position: absolute;
+       top: 70px;
+       left: 30px;
+
+    }
+    
+    .leader_board table{
+        background-color: rgba(102, 51, 153, 0.743);
+        color: rgb(239, 143, 25);
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+     
+    .leader_board h2{
+        background-color: rgba(102, 51, 153, 0.75);
+        color: rgba(236, 97, 47, 0.947);
+        border-radius: 10px;
+
+    }
