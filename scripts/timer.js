@@ -19,3 +19,9 @@ export function pad(val) {
     return valString;
   }
 }
+
+export function resetTime() {
+  secondsLabel.innerHTML = "00";
+  minutesLabel.innerHTML = "00";
+  totalSeconds = 0;
+}

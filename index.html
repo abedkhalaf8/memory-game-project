@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Memory Game Assignment</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-   
-
-    <div class="project-title">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h3 class="animate-charcter">Memory Game Assignment</h3>
-        </div>
-      </div>
-    </div>
-    <main>
-      <div class="game_view">
-        <div id="flashcard">
-        </div>
-      </div>
-      <div class="sidebar">
-        <div class="timer">
-          <label id="minutes">00</label>:<label id="seconds">00</label>
-        </div>
-        <div class="counter" id="gap">
-          Wrong Guesses <span class="counter-value">0</span>
-        </div>
-
-        <a href="./">
-          <button type="button" class="new_game_button" id="gap">
-            NEW GAME
-          </button></a
-        >
-      </div>
-    </main>
-      <script src="./scripts/main.js" type="module"></script>
+    <head>
+       <meta charset="utf-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <title>Memory Game Assignment</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1"/>
+       <link rel="stylesheet" href="styles/bottom_bar.css"/>
+       <link rel="stylesheet" href="styles/game_board.css"/>
+       <link rel="stylesheet" href="styles/header.css"/>
+       <link rel="stylesheet" href="styles/theme.css"/>
+       <link rel="preconnect" href="https://fonts.googleapis.com"/>
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+       <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap" rel="stylesheet"/>
+       <link rel="icon" type="image/x-icon" href="./images/gamepad-solid.svg">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+       <main>
+             <!-- website background music -->
+             <audio autoplay id="myAudio">
+                  <source src="./sounds/background.mp3" type="audio/wav" />
+             </audio>
+              <!-- website background theme video -->
+             <video autoplay muted loop id="background_video">
+                 <source src="./videos/background.mp4" type="video/mp4">
+             </video>
+             <!-- the project title  -->
+             <div class="project-title">
+                 <div class="row">
+                     <div class="col-md-12 text-center">
+                          <h3 class="animate-charcter">Memory Game Assignment</h3>
+                    </div>
+                  </div>
+             </div>
+             <!-- the game board -->
+             <div class="game_view">
+               <!-- Leader Board -->
+               <div class="leader_board">
+                 <h2>Leader Board</h3>
+                  <table class="leader_board_table">
+                    <tr>
+                      <th>Name</th>
+                      <th>Wrong Guesses</th>
+                      <th>Difficulty</th>
+                    </tr>
+                  </table>
+               </div>
+               <!-- Name input -->
+               <div class="name_input">
+                <div class="container">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name">
+                  <input type="submit" value="Submit" id="submit">
+                </div>
+              </div>
+              <!-- the flashcards -->
+                   <div id="flashcard"></div>
+             </div>
+             <!-- the bottom bar -->
+             <div class="bottom_bar">
+                <!-- game theme -->
+                <div class="themes">
+                      <button id="btn1"><img src="./images/backgroundv3.png" alt="theme1" id="imgv1"></button>
+                      <button id="btn2"><img src="./images/backgroundv2.png" alt="theme2" id="imgv2" ></button>
+                      <button id="btn3"><img src="./images/backgroundv1.png" alt="theme3" id="imgv3"></button>
+                 </div> 
+                  <!-- a timer to count how much takes to win the game. -->
+                  <div class="game_counters">
+                  <div class="timer">
+                      <label id="minutes">00</label>:<label id="seconds">00</label>
+                  </div>
+                  <!-- a counter for the wrong guesses. -->
+                  <div class="counter">Wrong Guesses:<span class="counter-value"> 0 </span></div>
+                </div>
+                <div class="level">
+                  <button type="button" id="btn-easy">EASY</button>
+                  <button type="button" id="btn-medium">MEDIUM</button>
+                  <button type="button" id="btn-hard">HARD</button>
+                </div>
+                <!-- new game button -->
+                <a href="./"><button type="button" class="new_game_button">NEW GAME</button></a>
+          
+             </div>
+       </main>
+    <script src="./scripts/main.js" type="module"></script>
+    <script src="./scripts/theme.js"></script>
+>>>>>>> da92af17aca1d6591acf7997ea483eae5c9af239
   </body>
 </html>

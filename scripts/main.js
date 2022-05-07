@@ -1,12 +1,36 @@
-import { assignIds, addClickEvent } from "./cards.js";
-import { table, arryOfCards } from "./table.js";
+import { resetFirstClick, resetWrongGuessCount, resetTitle } from "./cards.js";
+import { createGameBoard } from "./table.js";
+import { resetTime } from "./timer.js";
 
-let gameTable = table(arryOfCards, 3, 4);
-gameTable = gameTable + "</table>";
-document.getElementById("flashcard").innerHTML = gameTable;
+createGameBoard(3, 4);
 
-assignIds();
+// game levels
+let btn1 = document.getElementById("btn-easy");
+let btn2 = document.getElementById("btn-medium");
+let btn3 = document.getElementById("btn-hard");
+export let level = "easy";
+btn1.addEventListener('click', function (){
+    createGameBoard(3, 4);
+    resetFirstClick();
+    resetTime();
+    resetWrongGuessCount();
+    resetTitle();
+    level = "easy"
+})
+btn2.addEventListener('click', function (){
+  createGameBoard(3, 6);
+   resetFirstClick();
+   resetTime();
+   resetWrongGuessCount();
+   resetTitle();
+   level = "medium"
+})
+btn3.addEventListener('click', function (){
+  createGameBoard(4, 6);
+  resetFirstClick();
+  resetTime();
+  resetWrongGuessCount();
+  resetTitle();
+  level = "hard"
 
-export const gameBoard = document.querySelector(".table");
-gameBoard.addEventListener("click", addClickEvent);
-
+})

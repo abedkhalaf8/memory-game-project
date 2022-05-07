@@ -1,7 +1,7 @@
 import { setTime } from "./timer.js";
-import { gameBoard } from "./main.js";
+import { takeName } from "./leader_board.js"
 
-export let wrongGuessCount = 1;
+export let wrongGuessCount = 0;
 export let countMatches = 0;
 export let firstClick = true;
 export let cooldown = false;
@@ -21,13 +21,14 @@ export const assignIds = () => {
   }
 };
 
-export const cardHandler = () => {
+export const cardHandler = (currentGameBoard) => {
   const counter = document.querySelector(".counter-value");
   const title = document.querySelector(".animate-charcter");
   // back side image
-  const backSide = "../imgs/question_mark-flipped.jpg";
+  const backSide = "../images/question_mark-flipped.jpg";
   // getting all img elements inside the table and storing them as an array
   const imgs = [...document.querySelectorAll(".table img")];
+  const pairs = imgs.length / 2;
   // getting only the imgs that have attribute of flipped and is check for match
   let flippedCards = imgs.filter((img) => {
     return img.getAttribute("flipped") === "checkForMatch";
@@ -42,14 +43,16 @@ export const cardHandler = () => {
         // if they match change flipped atrribute from checkForMatch to matchFound
         changeAttribute(flippedCards, "flipped", "matchFound");
         countMatches++;
-        if (countMatches === 6) {
+        if (countMatches === 1) {
           clearInterval(time);
           title.innerHTML = "You Won!";
-          gameBoard.removeEventListener("click", addClickEvent);
+          currentGameBoard.removeEventListener("click", addClickEvent);
+          countMatches = 0;
+          takeName()
         }
       } else {
         // Counting the number of guesses
-        counter.innerHTML = wrongGuessCount++;
+        counter.innerHTML = ++wrongGuessCount;
         // if they don't match remove flipped attribute and change the displayed img to the backside image
         removeAttr(flippedCards, "flipped");
         changeAttribute(flippedCards, "src", backSide);
@@ -85,19 +88,27 @@ export const removeAttr = (cards, attribute) => {
 }
 
 export const addClickEvent = (e) => {
+  const currentGameBoard = e.currentTarget;
   if (firstClick) {
     time = setInterval(setTime, 1000);
     firstClick = false;
   }
 
   if (cooldown) return;
+
   const frontSide = {
-    1: "../imgs/img_1.png",
-    2: "../imgs/img_2.png",
-    3: "../imgs/img_3.png",
-    4: "../imgs/img_4.png",
-    5: "../imgs/img_5.png",
-    6: "../imgs/img_6.png",
+    1: "../images/img_1.png",
+    2: "../images/img_2.png",
+    3: "../images/img_3.png",
+    4: "../images/img_4.png",
+    5: "../images/img_5.png",
+    6: "../images/img_6.png",
+    7: "../images/img_7.png",
+    8: "../images/img_8.png",
+    9: "../images/img_9.png",
+    10: "../images/img_10.png",
+    11: "../images/img_11.png",
+    12: "../images/img_12.png",
   };
   const card = e.target;
   // cardId saves the id that was given to the img randomly
@@ -107,5 +118,20 @@ export const addClickEvent = (e) => {
   card.style.transform = "rotateY(0deg)";
   card.setAttribute("flipped", "checkForMatch");
 
-  cardHandler();
+  cardHandler(currentGameBoard);
 };
+
+export const resetFirstClick = () => {
+  firstClick = true;
+} 
+
+export const resetWrongGuessCount = () => {
+  const counter = document.querySelector(".counter-value");
+  wrongGuessCount = 0;
+  counter.innerHTML = wrongGuessCount;
+}
+
+export const resetTitle = () => {
+  const title = document.querySelector(".animate-charcter");
+  title.innerHTML = "Memory Game Assignment";
+}
