@@ -1,5 +1,5 @@
-# Memory Game Assignment - Weekend Project <
-AppleSeeds Bootcamp
+# Memory Game Assignment - Weekend Project 
+# AppleSeeds Bootcamp
 This weekend we worked on a new project called memory game.\
 In this project, we used HTML, CSS, and js.\
 [Abed](https://github.com/abedkhalaf8) worked on the design of the page HTML & CSS, JS levels feature.\
@@ -7,5 +7,5 @@ In this project, we used HTML, CSS, and js.\
 
 # [Link to our game project](https://memorygproject.netlify.app/)
 
-<img src="./images/projectimg.png" width="408"/>
+<img src="./images/projectimg.png" width="308"/>
 
