@@ -13,6 +13,9 @@
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&display=swap" rel="stylesheet"/>
        <link rel="icon" type="image/x-icon" href="./images/gamepad-solid.svg">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
     </head>
     <body> 
        <main>
@@ -21,7 +24,7 @@
                   <source src="./sounds/background.mp3" type="audio/wav" />
              </audio>
               <!-- website background theme video -->
-             <video autoplay muted loop id="backgroundvideo">
+             <video autoplay muted loop id="background_video">
                  <source src="./videos/background.mp4" type="video/mp4">
              </video>
              <!-- the project title  -->
@@ -39,16 +42,26 @@
              </div>
              <!-- the bottom bar -->
              <div class="bottom_bar">
+                <!-- game theme -->
+                <div class="themes">
+                      <button id="btn1"><img src="./images/backgroundv3.png" alt="theme1" id="imgv1"></button>
+                      <button id="btn2"><img src="./images/backgroundv2.png" alt="theme2" id="imgv2" ></button>
+                      <button id="btn3"><img src="./images/backgroundv1.png" alt="theme3" id="imgv3"></button>
+                 </div> 
                   <!-- a timer to count how much takes to win the game. -->
+                  <div class="game_counters">
                   <div class="timer">
                       <label id="minutes">00</label>:<label id="seconds">00</label>
                   </div>
                   <!-- a counter for the wrong guesses. -->
-                  <div class="counter">Wrong Guesses <span class="counter-value">0</span></div>
-                   <!-- new game button -->
-                  <a href="./"><button type="button" class="new_game_button">NEW GAME</button></a>
+                  <div class="counter">Wrong Guesses:<span class="counter-value"> 0 </span></div>
+                </div>
+                <!-- new game button -->
+                <a href="./"><button type="button" class="new_game_button">NEW GAME</button></a>
+          
              </div>
        </main>
     <script src="./scripts/main.js" type="module"></script>
+    <script src="./scripts/theme.js"></script>
   </body>
 </html>
